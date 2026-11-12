@@ -75,7 +75,7 @@ header.nav .wrap{display:flex;align-items:center;justify-content:space-between;g
 /* sections */
 section{padding-block:clamp(56px,9vw,120px);border-top:1px solid var(--line)}
 .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:clamp(28px,5vw,56px)}
-.sec-head h2{font:700 clamp(30px,5vw,60px)/1 var(--display);letter-spacing:-.02em;margin:0}
+.sec-head h2{font:600 clamp(28px,4.2vw,52px)/1.05 var(--display);letter-spacing:-.005em;margin:0}
 
 /* statement */
 .statement{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(24px,5vw,72px)}
@@ -124,7 +124,7 @@ figcaption span{font-size:14px;color:var(--mute)}
 /* contact */
 .contact{background:var(--sun);color:var(--sun-ink);border-top:0}
 .contact .label{color:var(--sun-ink);opacity:.7}
-.contact h2{font:700 clamp(38px,8vw,112px)/1 var(--display);letter-spacing:-.03em;margin:16px 0 36px;text-wrap:balance}
+.contact h2{font:600 clamp(30px,4.6vw,60px)/1.08 var(--display);letter-spacing:-.005em;margin:16px 0 14px;text-wrap:balance}
 .mail{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .mail a{font:600 clamp(18px,2.4vw,26px)/1.2 var(--body);text-decoration:none;border-bottom:2px solid currentColor;word-break:break-all}
 .mail button{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;background:var(--sun-ink);color:var(--sun);border:0;padding:12px 14px;cursor:pointer}
@@ -152,7 +152,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:62% 30%;display:block}
 .photo .safe{opacity:.7;border-color:var(--bone)}
 .photo .cap{position:absolute;left:16px;bottom:16px;color:var(--bone);background:rgba(0,0,0,.45);padding:6px 8px}
-.bio h2{font:700 clamp(30px,4vw,52px)/1 var(--display);letter-spacing:-.02em;margin:14px 0 6px}
+.bio h2{font:600 clamp(28px,3.6vw,46px)/1.05 var(--display);letter-spacing:-.005em;margin:14px 0 6px}
 .bio .role{font:500 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--sun);margin:0 0 22px}
 .bio p{margin:0 0 16px;max-width:60ch}
 .bio p.m{color:var(--mute)}
@@ -178,7 +178,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .voice{background:var(--ink-2)}
 .voice-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
 @media (max-width:820px){.voice-grid{grid-template-columns:1fr}}
-.voice h2{font:700 clamp(30px,4.6vw,56px)/1 var(--display);letter-spacing:-.02em;margin:14px 0 22px;text-wrap:balance}
+.voice h2{font:600 clamp(28px,4.2vw,50px)/1.05 var(--display);letter-spacing:-.005em;margin:14px 0 22px;text-wrap:balance}
 .voice p.big{font:500 clamp(19px,2vw,24px)/1.4 var(--body);margin:0 0 18px;max-width:40ch}
 .voice p{margin:0 0 16px;max-width:60ch;color:var(--mute)}
 .reads{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
@@ -188,6 +188,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .chips{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px}
 .chips a{font:500 14px/1 var(--body);text-decoration:none;border:1.5px solid var(--sun-ink);padding:10px 14px;color:var(--sun-ink)}
 .chips a:hover{background:var(--sun-ink);color:var(--sun)}
+
+/* contact cards */
+.contact .lede{margin:0 0 36px;max-width:62ch;font-size:18px}
+.ways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.ways{grid-template-columns:1fr}}
+.way{display:flex;flex-direction:column;gap:10px;padding:22px;border:1.5px solid var(--sun-ink)}
+.way h3{font:600 clamp(19px,1.55vw,22px)/1.15 var(--display);margin:0;letter-spacing:-.005em}
+.way p{margin:0;flex:1;font-size:15px;line-height:1.55}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.contact .btn{padding:13px 12px;letter-spacing:.08em}
+.contact .btn.dark{background:var(--sun-ink);color:var(--sun);border-color:var(--sun-ink)}
+.contact .btn.line{color:var(--sun-ink);border-color:var(--sun-ink)}
+.contact .btn.line:hover{background:var(--sun-ink);color:var(--sun)}
+.direct{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:32px}
+.direct a{font:600 18px/1.2 var(--body);color:var(--sun-ink);text-decoration:none;border-bottom:1.5px solid currentColor;word-break:break-all}
+.direct button{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;background:transparent;color:var(--sun-ink);border:1.5px solid var(--sun-ink);padding:9px 11px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -374,17 +390,33 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <p class="label">Get in touch</p>
-      <h2>Send us the cut.</h2>
-      <div class="mail">
-        <a href="mailto:jonathan@2023post.com?subject=New%20project" id="email">jonathan@2023post.com</a>
-        <button type="button" id="copy">Copy email</button>
+      <p class="label">Start here</p>
+      <h2>Let's talk about the project.</h2>
+      <p class="lede">Three ways to work with Jonathan. Pick the one that fits and the email starts itself.</p>
+      <div class="ways">
+        <div class="way">
+          <span class="label">The company</span>
+          <h3>Post project</h3>
+          <p>Tell us what it is, rough length, where it's headed (festival, streaming, social), your timeline, and a budget range if you have one.</p>
+          <div class="acts"><a class="btn dark" href="mailto:jonathan@2023post.com?subject=Post%20project&amp;body=Project%3A%0ALength%20/%20format%3A%0ADeliverables%20%28festival%2C%20streaming%2C%20social%29%3A%0ATimeline%3A%0ABudget%20range%3A%0A">Start a post project</a></div>
+        </div>
+        <div class="way">
+          <span class="label">The producer</span>
+          <h3>Executive producer role</h3>
+          <p>Share the company, the role, and a link to the posting.</p>
+          <div class="acts"><a class="btn dark" href="mailto:jonathan@2023post.com?subject=Executive%20producer%20role&amp;body=Company%3A%0ARole%3A%0ALink%20to%20posting%3A%0ALocation%20/%20remote%3A%0A">Email about a role</a><a class="btn line" href="jonathan-desir-resume.pdf" target="_blank" rel="noopener">View resume</a></div>
+        </div>
+        <div class="way">
+          <span class="label">The voice</span>
+          <h3>Voiceover</h3>
+          <p>Send the script or word count, where it'll run, and your session date.</p>
+          <div class="acts"><a class="btn dark" href="mailto:jonathan@2023post.com?subject=Voiceover%20booking&amp;body=Script%20or%20word%20count%3A%0AWhere%20it%20will%20run%3A%0ASession%20date%3A%0ABudget%3A%0A">Book a session</a><a class="btn line" href="https://www.youtube.com/playlist?list=PLH95ieZWTEM75OiD2HHq70iGlw99WrP7s" target="_blank" rel="noopener">Hear the reel</a></div>
+        </div>
       </div>
-      <div class="chips">
-        <span class="label">Or start with</span>
-        <a href="mailto:jonathan@2023post.com?subject=Post%20project">A post project</a>
-        <a href="mailto:jonathan@2023post.com?subject=Executive%20producer%20role">An EP role</a>
-        <a href="mailto:jonathan@2023post.com?subject=Voiceover%20booking">A voiceover booking</a>
+      <div class="direct">
+        <span class="label">Or email directly</span>
+        <a href="mailto:jonathan@2023post.com" id="email">jonathan@2023post.com</a>
+        <button type="button" id="copy">Copy email</button>
       </div>
     </div>
   </section>

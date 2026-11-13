@@ -87,6 +87,13 @@ h3{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.2vw,50px);lin
 .lane a span{font-size:12px;color:var(--mute)}
 .lane a:hover{background:var(--ink);color:var(--paper)}
 
+.glance{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.glance a{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.glance span{font-size:14px;color:var(--mute)}
+.glance b{font:700 19px/1.25 var(--serif)}
+.glance em{font-style:normal;font-size:14px;color:var(--red);font-weight:600;text-align:right}
+.glance a:hover b{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:600px){.glance a{grid-template-columns:1fr;gap:2px}.glance em{text-align:left}}
 /* experience */
 .jobs{border-top:2px solid var(--ink)}
 .job{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(20px,4vw,64px);padding:36px 0;border-bottom:1px solid var(--line)}
@@ -217,12 +224,12 @@ h3{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.2vw,50px);lin
       </div>
       <div class="timeline">
         <p class="kick">Career at a glance</p>
-        <div class="bar">
-          <a href="#experience" style="--w:9.7"><b>Red Car</b><span>2004 – 2013</span></a>
-          <a href="#experience" style="--w:8.8"><b>Optimus</b><span>2013 – 2022</span></a>
-          <a href="#experience" style="--w:4.4"><b>WoW Studios</b><span>2022 – 2026</span></a>
-        </div>
-        <div class="lane"><a href="#experience" style="--off:83%;--w2:17%"><b>2023 Post</b><span>2023 – now</span></a></div>
+        <ol class="glance">
+          <li><a href="#experience"><span>2023 – now</span><b>Founder &amp; Lead</b><em>2023 Post</em></a></li>
+          <li><a href="#experience"><span>2022 – 2026</span><b>Executive Producer</b><em>WoW Studios, Whirlpool</em></a></li>
+          <li><a href="#experience"><span>2013 – 2022</span><b>Executive Producer</b><em>Optimus</em></a></li>
+          <li><a href="#experience"><span>2004 – 2013</span><b>Intern → Executive Producer</b><em>Red Car</em></a></li>
+        </ol>
       </div>
     </section>
 

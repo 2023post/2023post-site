@@ -273,6 +273,12 @@ section{padding-block:clamp(36px,4.6vw,68px)}
 .hero{padding-block:clamp(24px,3.6vw,52px) clamp(28px,3.6vw,48px)}
 .brand{padding-block:clamp(28px,4.4vw,60px) 0}
 .heroband{margin-top:clamp(24px,3.6vw,48px)}
+
+.social{gap:14px;margin-bottom:30px}
+.ic{width:52px;height:52px;border-radius:50%;background:#141716;color:#F3F1EC;display:grid;place-items:center;transition:background .2s,color .2s,transform .2s}
+.ic svg{width:22px;height:22px;display:block}
+.ic:hover,.ic:focus-visible{background:#F2BE2E;color:#1A1405;transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.ic{transition:none}.ic:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -450,7 +456,7 @@ section{padding-block:clamp(36px,4.6vw,68px)}
 
   <footer class="endslate">
     <div class="wrap">
-      <nav class="social" aria-label="Elsewhere"><a class="sbtn" href="https://linkedin.com/in/jonathandesir" target="_blank" rel="noopener">LinkedIn</a><a class="sbtn" href="https://www.instagram.com/jdragon3/" target="_blank" rel="noopener">Instagram</a><a class="sbtn" href="mailto:jonathan@2023post.com">Email</a><a class="sbtn" href="resume/">Resume</a><a class="sbtn" href="https://www.youtube.com/playlist?list=PLH95ieZWTEM75OiD2HHq70iGlw99WrP7s" target="_blank" rel="noopener">Voice reel</a></nav>
+      <nav class="social" aria-label="Elsewhere"><a class="ic" href="https://linkedin.com/in/jonathandesir" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.84v1.54h.05c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21h-4z"/></svg></a><a class="ic" href="https://www.instagram.com/jdragon3/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg></a><a class="ic" href="mailto:jonathan@2023post.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5h18a1 1 0 0 1 1 1v.4l-10 6.2L2 6.9v-.4a1 1 0 0 1 1-1zm-1 3.75 10 6.2 10-6.2V17.5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></svg></a><a class="ic" href="resume/" aria-label="Resume" title="Resume"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 2.8h8.2L19 7.6v13.6H6z"/><path fill="none" stroke="currentColor" stroke-width="2" d="M14 2.8v5h5M9 12h7M9 16h7"/></svg></a><a class="ic" href="https://www.youtube.com/playlist?list=PLH95ieZWTEM75OiD2HHq70iGlw99WrP7s" target="_blank" rel="noopener" aria-label="Voice reel" title="Voice reel"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><rect x="3" y="9.5" width="2.2" height="5" rx="1.1"/><rect x="7" y="6" width="2.2" height="12" rx="1.1"/><rect x="11" y="3" width="2.2" height="18" rx="1.1"/><rect x="15" y="7" width="2.2" height="10" rx="1.1"/><rect x="19" y="10" width="2.2" height="4" rx="1.1"/></g></svg></a></nav>
       <div class="meta"><span class="tag">© 2026 2023 Post LLC</span><span class="tag">jonathan@2023post.com</span></div>
     </div>
   </footer>

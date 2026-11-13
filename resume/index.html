@@ -41,8 +41,11 @@ a{color:inherit}
 .side nav a[aria-current="page"] span{color:var(--red);font-weight:700}
 .side .foot{margin-top:auto;display:flex;flex-direction:column;gap:10px;font-size:15px;padding-top:28px}
 .side .foot .row{display:flex;flex-wrap:wrap;gap:6px 16px}
-.side .home{font-size:13px;color:var(--mute);text-decoration:none;margin-top:10px}
-.side .home:hover{color:var(--ink)}
+.side .home{font:600 14px/1 var(--sans);text-decoration:none;margin-top:14px;padding:13px 14px;border:1.5px solid var(--ink);align-self:flex-start}
+.side .home:hover{background:var(--ink);color:var(--paper)}
+.backbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+.backbar a{font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--red);padding-bottom:2px}
+.backbar a:hover{color:var(--red)}
 
 .stage{min-width:0;display:flex;flex-direction:column}
 .page{display:none;flex:1;flex-direction:column;padding:clamp(56px,9vh,120px) clamp(24px,6vw,120px) 40px;max-width:1500px;width:100%}
@@ -179,7 +182,7 @@ h3{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.2vw,50px);lin
 }
 @media (min-width:901px){.side .close{display:none}}
 @media print{
-  .side,.mbar,.pager,.filters,.player,.btns{display:none!important}
+  .side,.mbar,.pager,.backbar,.filters,.player,.btns{display:none!important}
   .app{display:block}.page{display:flex!important;padding:24px 0;break-after:page}
   h1,h2{margin:12px 0 20px;font-size:44px}
 }
@@ -201,7 +204,7 @@ h3{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.2vw,50px);lin
         <a class="ul" href="https://www.instagram.com/jdragon3/" target="_blank" rel="noopener">Instagram</a>
         <a class="ul" href="../jonathan-desir-resume.pdf" target="_blank" rel="noopener">PDF</a>
       </div>
-      <a class="home" href="../">← 2023post.com</a>
+      <a class="home" href="../">← Back to 2023post.com</a>
     </div>
   </aside>
 
@@ -390,6 +393,7 @@ h3{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.2vw,50px);lin
       '<span class="count">'+pad(i+1)+' / '+pad(pages.length)+'</span>'+
       (next?'<a class="next" href="#'+next.id+'">'+next.dataset.t+' →</a>':'<span></span>');
     p.appendChild(d);
+    var bb=document.createElement('div');bb.className='backbar';bb.innerHTML='<a href="../">← Back to 2023post.com</a><span>© 2026 2023 Post LLC</span>';p.appendChild(bb);
   });
   var links=[].slice.call(nav.querySelectorAll('a'));
   function setMenu(o){side.classList.toggle('open',o);mb.setAttribute('aria-expanded',o?'true':'false')}

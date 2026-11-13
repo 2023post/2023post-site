@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<title>Jonathan Desir · Resume</title>
+<meta name="description" content="Jonathan Desir, executive producer. Twenty-plus years leading production and post for brands, artists, and filmmakers.">
+<meta property="og:title" content="Jonathan Desir · Executive Producer">
+<meta property="og:description" content="Twenty-plus years leading production and post for brands, artists, and filmmakers.">
+<meta property="og:image" content="https://2023post.com/social-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--paper:#F3F1EC;--panel:#E8E5DD;--ink:#141716;--line:#D6D2C8;--mute:#6B6F6A;--sun:#F2BE2E;--sun-ink:#1A1405;--acc:#C98F0E;
+--display:"Archivo","Arial Black",sans-serif;--body:"Instrument Sans",Arial,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px),4vw);padding-right:max(16px,env(safe-area-inset-right,0px),4vw)}
+.tag{font:500 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:0}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.top .back{font:600 14px/1 var(--body);text-decoration:none;display:flex;align-items:center;gap:10px}
+.top .back svg{height:22px;width:auto}
+.top .acts{display:flex;gap:8px}
+.btn{font:600 14px/1 var(--body);text-decoration:none;padding:12px 15px;border:1.5px solid var(--ink);color:var(--ink);background:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--sun-ink)}
+.btn.sun:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+@media (max-width:560px){.top .acts .hide-s{display:none}}
+
+/* intro */
+.intro{padding-block:clamp(48px,7vw,96px) clamp(40px,5vw,64px);border-bottom:1px solid var(--line)}
+.intro-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end}
+@media (max-width:860px){.intro-grid{grid-template-columns:1fr}}
+h1{font:800 clamp(48px,8vw,112px)/.92 var(--display);letter-spacing:-.01em;margin:14px 0 18px}
+.role{font:500 13px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;margin:0 0 22px}
+.summary{font-size:clamp(18px,1.6vw,21px);line-height:1.5;max-width:40ch;margin:0}
+.facts{border-top:1.5px solid var(--ink)}
+.facts div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.facts dt{font:500 11px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.facts dd{margin:0}
+.facts a{text-decoration:none;border-bottom:1.5px solid var(--sun)}
+.avail{display:flex;align-items:center;gap:10px;font-weight:600}
+.dot{width:9px;height:9px;border-radius:50%;background:#2E9E5B;box-shadow:0 0 0 4px rgba(46,158,91,.18);flex:none}
+
+/* career bar */
+.career{padding-block:clamp(36px,5vw,56px);background:var(--panel);border-bottom:1px solid var(--line)}
+.career .head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.career .head p{margin:0;font-size:15px;color:var(--mute)}
+.bar{display:flex;height:76px;border:1.5px solid var(--ink);background:var(--paper)}
+.seg{position:relative;border:0;border-right:1.5px solid var(--ink);background:none;padding:10px 12px;text-align:left;cursor:pointer;font:inherit;color:inherit;display:flex;flex-direction:column;justify-content:space-between;min-width:0;overflow:hidden}
+.seg:last-child{border-right:0}
+.seg b{font:700 15px/1.15 var(--body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.seg span{font:500 11px/1 var(--mono);letter-spacing:.08em;color:var(--mute);white-space:nowrap}
+.seg:hover,.seg.on,.lane .seg:hover,.lane .seg.on{background:var(--sun)}
+.seg:hover span,.seg.on span{color:var(--sun-ink)}
+.years{position:relative;height:14px;font:500 11px/1 var(--mono);color:var(--mute);margin-top:10px;letter-spacing:.08em}.years span{position:absolute;top:0}
+.lane{display:flex;margin-top:8px}.lane .seg{border:1.5px solid var(--ink);background:var(--paper);height:56px}
+.lane span{display:block}
+@media (max-width:700px){.lane>span{display:none}.lane .seg{flex:1!important;height:auto}.bar{flex-direction:column;height:auto}.seg{flex:none!important;border-right:0;border-bottom:1.5px solid var(--ink);flex-direction:row;align-items:center;gap:12px;padding:12px}.seg:last-child{border-bottom:0}.years{display:none}}
+
+/* main layout */
+.body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:clamp(28px,5vw,80px);padding-block:clamp(48px,6vw,88px)}
+@media (max-width:900px){.body{grid-template-columns:1fr}.rail{display:none}}
+.rail nav{position:sticky;top:96px;display:flex;flex-direction:column;border-top:1.5px solid var(--ink)}
+.rail a{text-decoration:none;font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:13px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.rail a:hover,.rail a.on{color:var(--ink)}
+.rail a.on::after{content:"";width:7px;height:7px;background:var(--sun);border-radius:50%;align-self:center}
+section{margin-bottom:clamp(56px,7vw,96px)}
+section:last-child{margin-bottom:0}
+h2{font:800 clamp(30px,3.6vw,46px)/1 var(--display);letter-spacing:-.005em;margin:10px 0 26px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.sec-head h2{margin-bottom:22px}
+
+/* experience accordion */
+.jobs{border-top:1.5px solid var(--ink)}
+.job{border-bottom:1px solid var(--line)}
+.job summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto 28px;gap:8px 20px;align-items:baseline;padding:20px 0}
+.job summary::-webkit-details-marker{display:none}
+.job h3{font:700 clamp(20px,2vw,24px)/1.2 var(--body);margin:0}
+.job .co{display:block;font-size:15px;color:var(--mute);margin-top:3px;font-weight:400}
+.job .when{font:500 12px/1 var(--mono);letter-spacing:.08em;color:var(--mute);white-space:nowrap}
+.job .pm{width:28px;height:28px;border:1.5px solid var(--ink);display:grid;place-items:center;font:500 16px/1 var(--mono);align-self:center}
+.job .pm::before{content:"+"}
+.job[open] .pm{background:var(--ink);color:var(--paper)}
+.job[open] .pm::before{content:"–"}
+.job summary:hover h3{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.job .detail{padding:0 0 26px;max-width:68ch}
+.job ul{margin:0;padding:0;list-style:none}
+.job li{position:relative;padding-left:22px;margin-bottom:10px}
+.job li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:1.5px;background:var(--acc)}
+.job .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);padding:6px 8px;color:var(--mute);background:var(--paper)}
+@media (max-width:560px){.job summary{grid-template-columns:minmax(0,1fr) 28px}.job .when{grid-column:1;grid-row:2}.job .pm{grid-column:2;grid-row:1/3}}
+.expand{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;background:none;border:0;border-bottom:1.5px solid var(--sun);padding:0 0 3px;cursor:pointer;color:var(--ink);margin-bottom:24px}
+
+/* credits */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.filters button{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:10px 12px;border:1.5px solid var(--ink);background:none;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.credits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px}
+@media (max-width:1000px){.credits{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.credits{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.credit{margin:0;display:flex;flex-direction:column;gap:10px}
+.credit[hidden]{display:none}
+.credit .pimg{aspect-ratio:2/3;overflow:hidden;background:var(--panel);display:block}
+.credit img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.credit a:hover img{transform:scale(1.035)}
+@media (prefers-reduced-motion:reduce){.credit img{transition:none}}
+.credit b{display:block;font:600 15px/1.3 var(--body)}
+.credit span{display:block;font:400 12px/1.45 var(--mono);color:var(--mute);margin-top:3px}
+.credit a{text-decoration:none}
+.credit .go{font:600 13px/1.3 var(--body);color:var(--ink);margin-top:6px}
+.credit .go a{border-bottom:1.5px solid var(--sun)}
+.brands{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:16px}
+.brands b{font-weight:600}
+
+/* voice */
+.voice-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,48px);align-items:start}
+@media (max-width:860px){.voice-grid{grid-template-columns:1fr}}
+.player{aspect-ratio:16/9;background:var(--ink);position:relative}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vlist{border-top:1.5px solid var(--ink);margin:0}
+.vlist div{display:grid;grid-template-columns:130px minmax(0,1fr);gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.vlist dt{font:500 11px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.vlist dd{margin:0}
+
+/* two col blocks */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+.block{border-top:1.5px solid var(--ink);padding-top:16px}
+.block h3{font:700 19px/1.25 var(--body);margin:10px 0 6px}
+.block p{margin:0 0 10px;font-size:16px}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.skills span{font:500 14px/1 var(--body);padding:10px 12px;background:var(--panel);border:1px solid var(--line)}
+.press{border-top:1.5px solid var(--ink)}
+.press a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;align-items:baseline}
+.press a b{font-weight:600}
+.press a span{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.press a:hover b{text-decoration:underline;text-underline-offset:3px}
+.press div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
+.press div span{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+
+/* end */
+.end{background:var(--sun);color:var(--sun-ink);padding-block:clamp(48px,7vw,96px)}
+.end h2{margin-bottom:14px}
+.end p{margin:0 0 24px;max-width:52ch}
+.end .btn{border-color:var(--sun-ink);color:var(--sun-ink)}
+.end .btn.dk{background:var(--sun-ink);color:var(--sun)}
+.end .btn:hover{background:var(--sun-ink);color:var(--sun)}
+.end .row{display:flex;flex-wrap:wrap;gap:10px}
+footer{padding-block:22px;font:500 11px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none}
+
+@media print{
+  .top,.rail,.career,.filters,.expand,.player,.end .row,footer{display:none!important}
+  .body{display:block;padding:0}
+  .job .detail{display:block!important}
+  body{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="back" href="../" aria-label="Back to 2023post.com">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#mk"/></svg>
+      <span>2023 Post</span>
+    </a>
+    <div class="acts">
+      <a class="btn hide-s" href="../jonathan-desir-resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      <a class="btn sun" href="mailto:jonathan@2023post.com?subject=Executive%20producer%20role&amp;body=Company%3A%0ARole%3A%0ALink%20to%20posting%3A%0ALocation%20/%20remote%3A%0A">Email Jonathan</a>
+    </div>
+  </div>
+</header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="mk">
+  <rect x="8" y="26" width="4" height="12" fill="#C98F0E"/><rect x="15" y="20" width="4" height="24" fill="#C98F0E"/><rect x="22" y="14" width="4" height="36" fill="#C98F0E"/>
+  <rect x="31" y="8" width="2.5" height="50" fill="#141716"/><path d="M28 6h9l-4.5 6z" fill="#141716"/>
+  <rect x="38" y="18" width="4" height="28" fill="#B9BCB4"/><rect x="45" y="24" width="4" height="16" fill="#B9BCB4"/><rect x="52" y="28" width="4" height="8" fill="#B9BCB4"/>
+</g></defs></svg>
+
+<main>
+  <div class="intro">
+    <div class="wrap intro-grid">
+      <div>
+        <p class="tag">Resume</p>
+        <h1>Jonathan<br>Desir</h1>
+        <p class="role">Executive Producer</p>
+        <p class="summary">Twenty-plus years leading production and post for Whirlpool, McDonald's, State Farm, Miller Lite, and the Chicago Bulls, with collaborators from Chance the Rapper to John Singleton and Joe Pytka. A producer with an artist's DNA: poet, emcee, host, and voiceover actor.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Status</dt><dd><span class="avail"><span class="dot" aria-hidden="true"></span>Available now</span></dd></div>
+        <div><dt>Open to</dt><dd>Executive producer and head-of-post roles. Full-time or contract. Remote.</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:jonathan@2023post.com">jonathan@2023post.com</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/jonathandesir" target="_blank" rel="noopener">jonathandesir</a></dd></div>
+        <div><dt>Company</dt><dd><a href="../">2023post.com</a></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="career" aria-labelledby="ct">
+    <div class="wrap">
+      <div class="head"><p class="tag" id="ct">Career at a glance</p><p>Tap a stretch to open it.</p></div>
+      <div class="bar" id="bar">
+        <button class="seg" data-job="redcar" style="flex:9.7"><b>Red Car</b><span>2004 – 2013</span></button>
+        <button class="seg" data-job="optimus" style="flex:8.8"><b>Optimus</b><span>2013 – 2022</span></button>
+        <button class="seg" data-job="wow" style="flex:4.4"><b>WoW Studios</b><span>2022 – 2026</span></button>
+      </div>
+      <div class="lane"><span style="flex:19"></span><button class="seg" data-job="post" style="flex:3.9"><b>2023 Post</b><span>2023 – now</span></button></div>
+      <div class="years"><span style="left:0">2004</span><span style="left:26.2%">2010</span><span style="left:52.4%">2016</span><span style="left:78.6%">2022</span><span style="right:0">Now</span></div>
+    </div>
+  </div>
+
+  <div class="wrap body">
+    <aside class="rail">
+      <nav aria-label="Sections">
+        <a href="#experience">Experience</a>
+        <a href="#credits">Credits</a>
+        <a href="#voice">Voice &amp; stage</a>
+        <a href="#skills">Skills</a>
+        <a href="#community">Community</a>
+        <a href="#press">Press</a>
+        <a href="#education">Education</a>
+      </nav>
+    </aside>
+
+    <div>
+      <section id="experience">
+        <p class="tag">01</p>
+        <h2>Experience</h2>
+        <button class="expand" id="expandAll" type="button">Open all</button>
+        <div class="jobs">
+          <details class="job" id="wow" open>
+            <summary><div><h3>Executive Producer</h3><span class="co">WoW Studios, Whirlpool Corporation</span></div><span class="when">Jun 2022 – Nov 2026</span><span class="pm" aria-hidden="true"></span></summary>
+            <div class="detail">
+              <ul>
+                <li>Oversaw budgets, bidding, talent schedules, and delivery for WoW Studios, Whirlpool's in-house creative content studio, bridging creatives and brand stakeholders.</li>
+                <li>Led and developed cross-functional teams of editors, animators, and producers; completed Whirlpool's People Leader development training.</li>
+                <li>Recognized by the FOCUS Black Employee Network as part of Black Men in Motion.</li>
+              </ul>
+              <div class="chips"><span class="chip">In-house studio</span><span class="chip">Budgets &amp; bidding</span><span class="chip">Team leadership</span></div>
+            </div>
+          </details>
+          <details class="job" id="post">
+            <summary><div><h3>Founder &amp; Lead</h3><span class="co">2023 Post</span></div><span class="when">2023 – Present</span><span class="pm" aria-hidden="true"></span></summary>
+            <div class="detail">
+              <ul>
+                <li>Founded and leads a creative agency focused on post-production, guiding a collective of editors, artists, and creatives.</li>
+                <li>Owns client relationships from pitch through final delivery; highlights include <em>Studio B</em>, <em>Donut Boyz</em>, <em>Resignation</em>, and the Prime Video series <em>Fluff Piece</em>.</li>
+              </ul>
+              <div class="chips"><span class="chip">Editorial</span><span class="chip">Color &amp; finishing</span><span class="chip">Graphics</span><span class="chip">Delivery</span></div>
+            </div>
+          </details>
+          <details class="job" id="optimus">
+            <summary><div><h3>Executive Producer</h3><span class="co">Optimus</span></div><span class="when">Sep 2013 – Jun 2022</span><span class="pm" aria-hidden="true"></span></summary>
+            <div class="detail">
+              <ul>
+                <li>Led bidding, scheduling, and overall producing for editorial and animation post-production, while managing logistics, budgets, and studio technology.</li>
+                <li>Promoted in 2016 to a company-wide leadership role spanning new business, recruitment, and career development of the next generation of artists.</li>
+                <li>Praised by leadership for making connections with staff and clients alike, from interns and designers to senior artists and agency clients.</li>
+                <li>Produced post on Chance the Rapper's feature film <em>Magnificent Coloring World</em> (2021) and Shaquille O'Neal's Icy Hot campaign.</li>
+              </ul>
+              <div class="chips"><span class="chip">Editorial</span><span class="chip">Animation</span><span class="chip">New business</span><span class="chip">Recruiting</span></div>
+            </div>
+          </details>
+          <details class="job" id="redcar">
+            <summary><div><h3>Producer → Executive Producer</h3><span class="co">Red Car</span></div><span class="when">2004 – Sep 2013</span><span class="pm" aria-hidden="true"></span></summary>
+            <div class="detail">
+              <ul>
+                <li>Joined as an intern and earned promotions through Producer and Senior Producer to Executive Producer (2010) on the strength of client trust and team rapport.</li>
+                <li>Managed post-production projects, schedules, budgets, and client relationships across a full slate of commercial work.</li>
+              </ul>
+              <div class="chips"><span class="chip">Commercial post</span><span class="chip">Client relationships</span></div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="credits">
+        <p class="tag">02</p>
+        <div class="sec-head"><h2>Selected credits</h2></div>
+        <div class="filters" role="group" aria-label="Filter credits">
+          <button type="button" data-f="all" aria-pressed="true">All</button>
+          <button type="button" data-f="feature" aria-pressed="false">Films</button>
+          <button type="button" data-f="series" aria-pressed="false">Series</button>
+          <button type="button" data-f="camera" aria-pressed="false">On camera</button>
+        </div>
+        <div class="credits" id="creditGrid">
+          <figure class="credit" data-k="feature"><a class="pimg" href="https://www.youtube.com/watch?v=sfvh4VZsFuY" target="_blank" rel="noopener"><img src="../img/poster-mouse.jpg" alt="Mouse poster" loading="lazy"></a><figcaption><b>Mouse</b><span>Post production · Feature · 2026</span><span class="go"><a href="https://www.youtube.com/watch?v=sfvh4VZsFuY" target="_blank" rel="noopener">Watch ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="feature"><a class="pimg" href="https://www.youtube.com/watch?v=R1TycuGX4Mw" target="_blank" rel="noopener"><img src="../img/poster-ghostlight.jpg" alt="Ghostlight poster" loading="lazy"></a><figcaption><b>Ghostlight</b><span>Post production · Feature · 2024</span><span class="go"><a href="https://www.youtube.com/watch?v=R1TycuGX4Mw" target="_blank" rel="noopener">Watch ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="series camera"><a class="pimg" href="https://www.primevideo.com/detail/0QRY5ROOGTCRAXM5ZYOLW56DFA" target="_blank" rel="noopener"><img src="../img/poster-fluff-piece.jpg" alt="Fluff Piece key art" loading="lazy" style="object-position:50% 20%"></a><figcaption><b>Fluff Piece</b><span>Post production + series lead · Prime Video · 2026</span><span class="go"><a href="https://www.primevideo.com/detail/0QRY5ROOGTCRAXM5ZYOLW56DFA" target="_blank" rel="noopener">Stream on Prime Video ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="feature"><a class="pimg" href="https://www.youtube.com/watch?v=-f0rmXM_TdI" target="_blank" rel="noopener"><img src="../img/poster-mcb.jpg" alt="Magnificent Coloring World poster" loading="lazy"></a><figcaption><b>Magnificent Coloring World</b><span>Post producer · Concert film · 2021</span><span class="go"><a href="https://www.youtube.com/watch?v=-f0rmXM_TdI" target="_blank" rel="noopener">Watch ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="series"><a class="pimg" href="https://tubitv.com/series/300018011/storytime-with-fiona-fluff" target="_blank" rel="noopener"><img src="../img/poster-storytime.jpg" alt="Storytime with Fiona and Fluff key art" loading="lazy"></a><figcaption><b>Storytime with Fiona &amp; Fluff</b><span>Editorial · Special · 2025</span><span class="go"><a href="https://tubitv.com/series/300018011/storytime-with-fiona-fluff" target="_blank" rel="noopener">Stream on Tubi ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="series"><a class="pimg" href="https://www.youtube.com/@studiobseries6338" target="_blank" rel="noopener"><img src="../img/poster-studio-b.jpg" alt="Studio B key art" loading="lazy"></a><figcaption><b>Studio B</b><span>Post production · Series</span><span class="go"><a href="https://www.youtube.com/@studiobseries6338" target="_blank" rel="noopener">Watch ↗</a> &nbsp;<a href="https://reelchicago.com/article/studio-b/" target="_blank" rel="noopener">Read ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="feature"><a class="pimg" href="https://youtu.be/T6EaXL-nO18" target="_blank" rel="noopener"><img src="../img/poster-donut-boyz.jpg" alt="Donut Boyz poster" loading="lazy"></a><figcaption><b>Donut Boyz</b><span>Post production · Short</span><span class="go"><a href="https://youtu.be/T6EaXL-nO18" target="_blank" rel="noopener">Watch ↗</a></span></figcaption></figure>
+          <figure class="credit" data-k="feature"><a class="pimg" href="https://www.itsnova.com/burkie/projects/SdTR9agnCZF6" target="_blank" rel="noopener" style="background:#E0E1E0"><img src="../img/poster-resignation.jpg" alt="Resignation poster" loading="lazy" style="object-fit:contain"></a><figcaption><b>Resignation</b><span>Post production · Feature · In development</span><span class="go"><a href="https://www.itsnova.com/burkie/projects/SdTR9agnCZF6" target="_blank" rel="noopener">Behind the scenes ↗</a></span></figcaption></figure>
+        </div>
+        <p class="brands"><b>Brands:</b> Whirlpool, McDonald's, State Farm, Miller Lite, the Chicago Bulls, Coors Light, Foot Locker, JBL, Icy Hot.</p>
+      </section>
+
+      <section id="voice">
+        <p class="tag">03</p>
+        <h2>Voice &amp; stage</h2>
+        <div class="voice-grid">
+          <dl class="vlist">
+            <div><dt>Voiceover</dt><dd>Commercial and radio reads for Coors Light, Foot Locker, JBL, and others. Narrated the nominee films for the Best of the Midwest Awards.</dd></div>
+            <div><dt>Hosting</dt><dd>Host of the Best of the Midwest Awards at the Midwest Film Festival, the Half-Rez motion design event, and AICP's Camp Kuleshov.</dd></div>
+            <div><dt>On camera</dt><dd>Series lead Charles, the Chancellor of Clean, in <em>Fluff Piece</em>, a Wonder Project children's series on Prime Video (2026). RedEye cover feature.</dd></div>
+            <div><dt>Spoken word</dt><dd>Poet and emcee performing nationwide. Third place at the 2004 collegiate National Poetry Slam with the EMU Poetry Society.</dd></div>
+          </dl>
+          <div>
+            <div class="player"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLH95ieZWTEM75OiD2HHq70iGlw99WrP7s" title="Jonathan Desir voice reel" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <p class="tag" style="margin-top:10px">Voice reel</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <p class="tag">04</p>
+        <h2>What he runs</h2>
+        <div class="skills">
+          <span>Budgets</span><span>Bidding</span><span>Scheduling</span><span>Talent schedules</span><span>Team leadership</span><span>Project management</span><span>Client relationships</span><span>New business</span><span>Recruiting</span><span>Mentoring</span><span>Editorial</span><span>Animation</span><span>Color &amp; finishing</span><span>Delivery specs</span><span>Studio technology</span>
+        </div>
+      </section>
+
+      <section id="community">
+        <p class="tag">05</p>
+        <h2>Community</h2>
+        <div class="duo">
+          <div class="block"><p class="tag">Free Spirit Media</p><h3>Former Board President</h3><p>A nonprofit teaching media arts to Chicago youth. Also served on the Free Spirit PRO advisory committee.</p></div>
+          <div class="block"><p class="tag">Midwest Film Festival</p><h3>Former Board Member</h3><p>The nation's only year-round festival dedicated to Midwestern filmmakers.</p></div>
+        </div>
+      </section>
+
+      <section id="press">
+        <p class="tag">06</p>
+        <h2>Press</h2>
+        <div class="press">
+          <a href="https://www.musicbed.com/articles/career/jonathan-desir-on-advertising-mentorship-and-creative-storytelling/" target="_blank" rel="noopener"><b>Career profile</b><span>Musicbed ↗</span></a>
+          <a href="https://reelchicago.com/article/jonathan-desir/" target="_blank" rel="noopener"><b>The Reel Black List</b><span>Reel Chicago ↗</span></a>
+          <a href="https://lbbonline.com/news/optimus-signs-jon-desir" target="_blank" rel="noopener"><b>Optimus signing</b><span>LBB ↗</span></a>
+          <a href="https://voyagechicago.com/interview/meet-jonathan-desir-optimus-river-north/" target="_blank" rel="noopener"><b>Career interview</b><span>Voyage ↗</span></a>
+          <a href="https://screenmag.com/optimus-executive-producer-jonathan-desir-answers-five-questions-with-screen/" target="_blank" rel="noopener"><b>Five Questions</b><span>Screen ↗</span></a>
+          <a href="https://www.shootonline.com/spw/optimus-promotes-tracy-spera-and-jon-desir-executive-producer/" target="_blank" rel="noopener"><b>EP promotion</b><span>SHOOT ↗</span></a>
+          <a href="https://reelchicago.com/article/studio-b/" target="_blank" rel="noopener"><b>Studio B</b><span>Reel Chicago ↗</span></a>
+        </div>
+      </section>
+
+      <section id="education">
+        <p class="tag">07</p>
+        <h2>Education &amp; beyond</h2>
+        <div class="duo">
+          <div class="block"><p class="tag">Eastern Michigan University · 2004</p><h3>B.A. Psychology</h3><p>Minors in Business and Communication. Poetry Society, rec league basketball, Freshman Orientation Team mentor, Black Student Union, Open Mic Band.</p></div>
+          <div class="block"><p class="tag">Off the clock</p><h3>Detroit-raised, Haitian-American</h3><p>Middle child of five. Poet, hip-hop artist, pickup-hoops regular, lifelong gamer, NBA obsessive, and proud new father.</p></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="end">
+    <div class="wrap">
+      <p class="tag" style="color:inherit;opacity:.7">Hiring?</p>
+      <h2>Let's talk about the role.</h2>
+      <p>Executive producer and head-of-post roles, full-time or contract, remote.</p>
+      <div class="row">
+        <a class="btn dk" href="mailto:jonathan@2023post.com?subject=Executive%20producer%20role&amp;body=Company%3A%0ARole%3A%0ALink%20to%20posting%3A%0ALocation%20/%20remote%3A%0A">Email about a role</a>
+        <a class="btn" href="https://linkedin.com/in/jonathandesir" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="../jonathan-desir-resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap"><span>© 2026 2023 Post LLC</span><a href="../">2023post.com</a></div></footer>
+
+<script>
+(function(){
+  var jobs=[].slice.call(document.querySelectorAll('.job')),segs=[].slice.call(document.querySelectorAll('.seg'));
+  function mark(id){segs.forEach(function(s){s.classList.toggle('on',s.dataset.job===id)})}
+  segs.forEach(function(s){s.addEventListener('click',function(){
+    var j=document.getElementById(s.dataset.job);jobs.forEach(function(x){x.open=(x===j)});mark(s.dataset.job);
+    j.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  })});
+  jobs.forEach(function(j){j.addEventListener('toggle',function(){if(j.open)mark(j.id)})});
+  mark('wow');
+  var ex=document.getElementById('expandAll');
+  ex.addEventListener('click',function(){var all=jobs.every(function(j){return j.open});jobs.forEach(function(j){j.open=!all});ex.textContent=all?'Open all':'Close all'});
+
+  var fb=[].slice.call(document.querySelectorAll('.filters button')),cr=[].slice.call(document.querySelectorAll('.credit'));
+  fb.forEach(function(b){b.addEventListener('click',function(){
+    fb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    var f=b.dataset.f;cr.forEach(function(c){c.hidden=!(f==='all'||c.dataset.k.split(' ').indexOf(f)>-1)});
+  })});
+
+  var links=[].slice.call(document.querySelectorAll('.rail a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    links.forEach(function(a){var t=document.querySelector(a.getAttribute('href'));t&&io.observe(t)});
+  }
+  window.addEventListener('beforeprint',function(){jobs.forEach(function(j){j.open=true})});
+})();
+</script>
+</body>
+</html>

@@ -410,7 +410,7 @@ h3{font-family:var(--serif);font-weight:700;font-size:clamp(30px,3.2vw,50px);lin
       '<span class="count">'+pad(i+1)+' / '+pad(pages.length)+'</span>'+
       (next?'<a class="next" href="#'+next.id+'">'+next.dataset.t+' →</a>':'<span></span>');
     p.appendChild(d);
-    var bb=document.createElement('div');bb.className='backbar';bb.innerHTML='<a href="../">← Back to 2023post.com</a><span>© 2026 2023 Post LLC</span>';p.appendChild(bb);
+    var bb=document.createElement('div');bb.className='backbar';bb.innerHTML='<a href="../">← Back to 2023post.com</a><span>© '+new Date().getFullYear()+' 2023 Post LLC</span>';p.appendChild(bb);
   });
   var links=[].slice.call(nav.querySelectorAll('a'));
   function setMenu(o){side.classList.toggle('open',o);mb.setAttribute('aria-expanded',o?'true':'false')}
